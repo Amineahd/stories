@@ -9,8 +9,8 @@
                           likeableId: response.id,
                           disableOverlay: true }) %>
   <% else %>
-    <%= button_to '', method: :get, class: 'like-button', data: { behavior: 'trigger-overlay' } do %>
-      <i class="fa fa-heart-o"></i><span class="hide-text">Like</span>
+    <%= button_to (t '.key_2'), method: :get, class: 'like-button', data: { behavior: 'trigger-overlay' } do %>
+      <i class="fa fa-heart-o"></i><span class="hide-text"><%= t '.like_1' %></span>
     <% end %>
     <span class="like-count"><%= response.likes.size %></span>
   <% end %>

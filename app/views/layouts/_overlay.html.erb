@@ -1,28 +1,28 @@
 <div data-behavior="overlay" class="overlay overlay-hugeinc">
   <button data-behavior="close-overlay" type="button" class="overlay-close"><span class="glyphicon glyphicon-remove"></span></button>
   <nav>
-    <h2 class="grayed-heading center">Sign in or create an account</h2>
+    <h2 class="grayed-heading center"><%= t '.sign_in_or' %></h2>
     <ul class="omniauth-button-group">
       <li class="omniauth-button">
         <%= link_to user_omniauth_authorize_path(:facebook), class: 'button facebook' do %>
-          <%= icon('facebook-official') %>Sign in with Facebook
+          <%= t '.sign_in_with', :icon_facebook => (icon('facebook-official')) %>
         <% end %>
       </li>
 
       <li class="omniauth-button google">
         <%= link_to user_omniauth_authorize_path(:google_oauth2), class: 'button google' do %>
-          <%= icon('google') %>Sign in with Google
+          <%= t '.sign_in_with_1', :icon_google => (icon('google')) %>
         <% end %>
       </li>
 
       <li class="omniauth-button twitter">
         <%= link_to user_omniauth_authorize_path(:twitter), class: 'button twitter' do %>
-          <%= icon('twitter') %>Sign in with Twitter
+          <%= t '.sign_in_with_2', :icon_twitter => (icon('twitter')) %>
         <% end %>
       </li>
 
       <li>
-        <%= link_to "Sign in or Sign up with email", new_user_session_path, class: "signin-signup-link" %>
+        <%= link_to (t '.sign_in_or_1'), new_user_session_path, class: "signin-signup-link" %>
       </li>
     </ul>
   </nav>

@@ -5,6 +5,9 @@ gem 'rails', '4.2.6'
 gem 'puma', '~> 2.15'
 gem 'pg'
 
+#i18n
+gem 'i18n-tasks', '~> 0.9.13'
+gem 'easy_translate'
 # Auth
 gem 'devise', '~> 3.5.3'
 gem 'omniauth-facebook', '~> 3.0'

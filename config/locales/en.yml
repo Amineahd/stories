@@ -1,23 +1,216 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  hello:
+    hello: "Hello world"
+  layouts:
+    simple:
+      stories: "Stories"
+    editor:
+      stories_1: "Stories"
+    overlay:
+      sign_in_or: "Sign in or create an account"
+      sign_in_with: "%{icon_facebook}Sign in with Facebook"
+      sign_in_with_1: "%{icon_google}Sign in with Google"
+      sign_in_with_2: "%{icon_twitter}Sign in with Twitter"
+      sign_in_or_1: "Sign in or Sign up with email"
+    admin_header:
+      sidekiq: "Sidekiq"
+      sign_out: "Sign out"
+    header:
+      bookmarks: "Bookmarks"
+      write_a_story: "Write a story"
+      write_a_story_1: "Write a story"
+      sign_in_sign: "Sign in / Sign up"
+    avatar_dropdown:
+      new_story: "New story"
+      drafts_and: "Drafts and stories"
+      profile: "Profile"
+      sign_out_1: "Sign out"
+    simple_header:
+      write_a_story_2: "Write a story"
+      write_a_story_3: "Write a story"
+      sign_in_sign_1: "Sign in / Sign up"
+    application:
+      stories_2: "Stories"
+    editor_header:
+      publish: "Publish"
+      ready_to: "Ready to Publish your work?"
+      add_tags_to: "Add tags to reach more people"
+      publish_1: "Publish"
+  posts:
+    show:
+      edit: "Edit"
+      delete: "Delete"
+      related: "Related stories"
+      responses: "Responses"
+    likes:
+      key: ""
+      like: "Like"
+    post:
+      read_more: "Read more"
+    top_stories:
+      read_more_1: "Read more"
+    response_editor:
+      cancel: "Cancel"
+    edit:
+      edit_post: "Edit Post"
+    feed_metadata:
+      recommended_by: "Recommended by %{link_to_post}"
+      and: "and %{pluralize_post}"
+      featured_by: "Featured by Stories Staff and recommended by %{post_likes}"
+    social_share:
+      share: "SHARE"
+    new:
+      new_post: "New Post"
+    post_metadata:
+      ago_149: "%{time_ago_in} ago &#149; %{post_length_in}"
+    bookmarks:
+      key_1: ""
+      bookmark_html: "%{button_to}\n      <span class=\"icon-bookmark-o\"></span><span class=\"hide-text\">Bookmark</span>"
+  admin:
+    feature_tag_button:
+      feature: "Feature"
+    unfeature_post_button:
+      unfeature: "Unfeature"
+    dashboards:
+      show:
+        admin: "Admin Dashboard"
+        featured_tags: "Featured tags"
+        other_tags: "Other tags"
+    feature_post_button:
+      feature_1: "Feature"
+    unfeature_tag_button:
+      unfeature_1: "Unfeature"
+  shared:
+    inline_editor:
+      cancel_1: "Cancel"
+  dashboards:
+    show:
+      featured_tags_1: "Featured tags"
+      tags_you: "Tags you follow"
+      top_stories: "Top stories"
+  recommended_posts:
+    index:
+      following_html: "<b>%{user_following}</b> Following"
+      edit_1: "Edit"
+      recommended_by_1: "Recommended by %{user_username}"
+  stories:
+    published:
+      your_stories: "Your Stories"
+      write_a_story_4: "Write a story"
+      published_ago: "Published %{time_ago_in} ago &#149; %{post_length_in}"
+      edit_2: "Edit"
+      delete_1: "Delete"
+      no_published: "No published posts yet"
+    drafts:
+      your_stories_1: "Your Stories"
+      write_a_story_5: "Write a story"
+      last_edited: "Last edited %{time_ago_in} ago &#149;"
+      so_far_149: "%{post_length_in} \n                  (%{draft_word}) so far &#149;"
+      edit_3: "Edit"
+      delete_2: "Delete"
+      no_drafts_yet: "No drafts yet"
+  tags:
+    show:
+      tagged_in: "Tagged in"
+      people: "People Interested in %{dashboard_tag}"
+      related_tags: "Related Tags"
+      tags_you_1: "Tags you follow"
+      top_stories_1: "Top stories"
+  responses:
+    response:
+      ago: "%{time_ago_in} ago"
+    likes:
+      key_2: ""
+      like_1: "Like"
+    bookmarks:
+      key_3: ""
+      bookmark_html: "%{button_to}\n      <span class=\"icon-bookmark-o\"></span><span class=\"hide-text\">Bookmark</span>"
+  user_mailer:
+    welcome_email:
+      welcome_to: "Welcome to Stories!"
+      hi_thank_you_html: "Hi <strong style=\"color: #00ab6b;\">%{user_username}</strong>, thank you for becoming a member of the Stories community!"
+      we_ve_got_some: "We've got some suggestions to get you started :)"
+      follow_other: "Follow other users and tags to customize your feed"
+      share_your: "Share your story with the community"
+      again_thanks_html: "Again, thanks for creating an account on Stories, if you are Rails developer,\n  please checkout <a href=\"https://github.com/kenny-hibino/stories\"\n                     style=\"color: #00ab6b;\">github repository</a> of this web app."
+  users:
+    show:
+      edit_4: "Edit"
+      interests: "Interests"
+      latest: "latest"
+      see_all: "See all"
+      recommended_by_2: "Recommended by %{user_username} &#149; \n        %{link_to_see}"
+    edit:
+      cancel_2: "Cancel"
+  devise:
+    confirmations:
+      new:
+        resend: "Resend confirmation instructions"
+    passwords:
+      edit:
+        change_your: "Change your password"
+        characters: "(%{minimum} characters minimum)"
+      new:
+        forgot_your: "Forgot your password?"
+    mailer:
+      confirmation_instructions:
+        welcome: "Welcome %{email}"
+        you_can: "You can confirm your account email through the link below:"
+        confirm_my: "Confirm my account"
+      reset_password_instructions:
+        hello: "Hello %{resource_email}"
+        someone_has: "Someone has requested a link to change your password. You can do this through the link below."
+        change_my: "Change my password"
+        if_you_didn_t: "If you didn't request this, please ignore this email."
+        your_password: "Your password won't change until you access the link above and create a new one."
+      password_change:
+        hello_1: "Hello %{resource_email}"
+        we_re: "We're contacting you to notify you that your password has been changed."
+      unlock_instructions:
+        hello_2: "Hello %{resource_email}"
+        your_account: "Your account has been locked due to an excessive number of unsuccessful sign in attempts."
+        click_the_link: "Click the link below to unlock your account:"
+        unlock_my: "Unlock my account"
+    shared:
+      links:
+        log_in: "Log in"
+        sign_up: "Sign up"
+        forgot_your_1: "Forgot your password?"
+        didn_t_receive: "Didn't receive confirmation instructions?"
+        didn_t_receive_1: "Didn't receive unlock instructions?"
+        sign_in_with_3: "Sign in with #{OmniAuth::Utils.camelize(provider)}"
+    registrations:
+      edit:
+        edit_5: "Edit %{resource_name}"
+        currently: "Currently waiting confirmation for: %{resource}"
+        leave_blank_if: "(leave blank if you don't want to change it)"
+        we_need_your: "(we need your current password to confirm your changes)"
+        cancel_my: "Cancel my account"
+        cancel_my_1: "Cancel my account"
+        unhappy: "Unhappy? %{button_to}"
+        back: "Back"
+      new:
+        sign_up_1: "Sign up"
+    sessions:
+      new:
+        sign_up_2: "Sign up"
+    unlocks:
+      new:
+        resend_unlock: "Resend unlock instructions"
+  search:
+    show:
+      all_html: "All <span class=\"glyphicon glyphicon-chevron-right pull-right\"></span>"
+      people_1: "People"
+      stories_3: "Stories"
+      tags: "Tags"
+      people_2: "People"
+    users:
+      all: "All"
+      people_3_html: "People <span class=\"glyphicon glyphicon-chevron-right pull-right\"></span>"
+  digest_mailer:
+    daily_email:
+      stories_daily_html: "<strong style=\"color: rgba(0,0,0,0.8);\n            font-family: 'Open Sans', sans-serif;\n            font-size; 22px;\n            font-weight: bold;\n            line-height: 24px;\n            margin: 0;\n            padding-top: 15px;\n            padding-bottom: 5px;\n            \">Stories Daily Digest</strong>\n\n    <hr style=\"max-width: 40px; border: 1px solid rgba(0,0,0, 0.2);\"/>"
+      recommended_by_3: "Recommended by"
+      stories_staff: "Stories Staff"
+      ago_149_1: "%{time_ago_in} ago &#149; %{post_length_in}"
+      read_more_on: "Read more on Stories"

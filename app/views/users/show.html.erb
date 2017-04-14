@@ -40,7 +40,7 @@
     <% end %>
 
     <% if user_signed_in? && current_user?(@user) %>
-      <%= link_to "Edit", edit_user_path(@user), class: 'button green-border-button pull-right edit-button' %>
+      <%= link_to (t '.edit_4'), edit_user_path(@user), class: 'button green-border-button pull-right edit-button' %>
     <% end %>
 
     </div>
@@ -50,7 +50,7 @@
 
 <div class="posts-wrapper" data-animation="fadeInUp-fadeOutDown">
   <div class="flex-container border-top">
-    <h4 class="small-heading">Interests</h4>
+    <h4 class="small-heading"><%= t '.interests' %></h4>
     <% if user_signed_in? && current_user?(@user) %>
       <%= react_component('AddTagButton') %>
     <% end %>
@@ -62,7 +62,7 @@
   <% end %>
 
   <% if @latest_posts.any? %>
-    <h4 class="small-heading border-top">latest</h4>
+    <h4 class="small-heading border-top"><%= t '.latest' %></h4>
     <%= render @latest_posts %>
   <% end %>
 </div>
@@ -71,8 +71,7 @@
 <% if @recommended_posts.any? %>
   <div class="banner-container" data-animation="fadeInUp-fadeOutDown">
     <div class="posts-wrapper">
-      <h4 class="heading-border-b">Recommended by <%= @user.username %> &#149; 
-        <%= link_to "See all", user_recommended_posts_path(@user) %>
+      <h4 class="heading-border-b"><%= t '.recommended_by_2', :user_username => (@user.username), :link_to_see => (link_to (t '.see_all'), user_recommended_posts_path(@user)) %>
       </h4>
       <div class="flex-container f-wrap">
         <% @recommended_posts.each do |post| %>

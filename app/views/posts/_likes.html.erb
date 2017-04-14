@@ -10,8 +10,8 @@
                           overlayHeading: "People liked #{post.title}",
                           overlayEndpoint: api_likers_path(post_id: post.id)}) %>
   <% else %>
-    <%= button_to '', method: :get, class: 'like-button', data: { behavior: 'trigger-overlay' } do %>
-      <i class="fa fa-heart-o"></i><span class="hide-text">Like</span>
+    <%= button_to (t '.key'), method: :get, class: 'like-button', data: { behavior: 'trigger-overlay' } do %>
+      <i class="fa fa-heart-o"></i><span class="hide-text"><%= t '.like' %></span>
     <% end %>
     <span class="like-count"><%= post.likes.size %></span>
   <% end %>

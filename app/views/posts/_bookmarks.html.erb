@@ -7,8 +7,8 @@
       bookmarkableType: 'Post',
       bookmarkableId: post.id }) %>
   <% else %>
-    <%= button_to '', method: :get, class: 'bookmark-button', data: { behavior: 'trigger-overlay' } do %>
-      <span class="icon-bookmark-o"></span><span class="hide-text">Bookmark</span>
-    <% end %>
+     <%= button_to '', method: :get, class: 'bookmark-button', data: { behavior: 'trigger-overlay' } do %>
+	<span class="icon-bookmark-o"></span><span class="hide-text">Bookmark</span>
+     <% end %>
   <% end %>
 </div>
